@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cloudfarm {
+  background-image: url("../img/header-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 12px;
+  padding-bottom: 30px;
+  position: relative;
+}
+.cloudfarm_top {
+  position: absolute;
+  top: 121px;
+  right: 35px;
+}
+.cloudfarm_bottom {
+  position: absolute;
+  bottom: 21px;
+  left: 156px;
+}
+.cloudfarm_header {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 8px 8px 16px;
+  background-color: #fff;
+  border-radius: 50px;
+}
+.cloudfarm_header--nav {
+  width: 100%;
+  max-width: 370px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cloudfarm_header--nav--link {
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.cloudfarm_header--nav--link:hover {
+  color: #01522D;
+}
+.cloudfarm_header--btn {
+  padding: 12px 20px;
+  background-color: #01522D;
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.cloudfarm_header--btn:hover {
+  background-color: #013817;
+}
+.cloudfarm_content {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 41px;
+}
+.cloudfarm_content .cloudfarm_slider {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 26px;
+}
+.cloudfarm_content .cloudfarm_slider--track {
+  display: flex;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+.cloudfarm_content .cloudfarm_slider--slide {
+  min-width: 100%;
+  flex: 0 0 100%;
+}
+.cloudfarm_content .cloudfarm_slider--dots {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+.cloudfarm_content .cloudfarm_slider--dot {
+  width: 30px;
+  height: 9px;
+  border: none;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: background 0.25s ease, width 0.25s ease;
+}
+.cloudfarm_content .cloudfarm_slider--dot.is-active {
+  background: #fff;
+}
+.cloudfarm_content--title {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 140%;
+  color: #EDFFF7;
+  margin: 12px 0;
+}
+.cloudfarm_content--text {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 152%;
+  color: #EDFFF7;
+}
+.cloudfarm_content--btn {
+  margin-top: 32px;
+  padding: 16px 32px;
+  background-color: #EDFFF7;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 50px;
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #032817;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
