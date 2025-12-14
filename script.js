@@ -53,13 +53,3 @@ document.addEventListener('keydown', (e) => {
     document.body.style.overflow = '';
   }
 });
-
-const track = document.querySelector('.cards-track');
-
-track.addEventListener('mouseenter', () => {
-    track.style.animationPlayState = 'paused';
-});
-
-track.addEventListener('mouseleave', () => {
-    track.style.animationPlayState = 'running';
-});
