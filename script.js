@@ -20,8 +20,46 @@ if (slider) {
 
   goTo(0);
 
-  // автопрокрутка (по желанию)
-  // setInterval(() => {
-  //   goTo(index === 0 ? 1 : 0);
-  // }, 5000);
+  setInterval(() => {
+    goTo(index === 0 ? 1 : 0);
+  }, 5000);
 }
+
+
+const burger = document.querySelector('.cloudfarm_burger');
+const openBtn = document.getElementById('burgerOpen');
+const closeBtn = document.getElementById('burgerClose');
+
+openBtn.addEventListener('click', () => {
+  burger.classList.add('is-open');
+  document.body.style.overflow = 'hidden';
+});
+
+closeBtn.addEventListener('click', () => {
+  burger.classList.remove('is-open');
+  document.body.style.overflow = '';
+});
+
+burger.addEventListener('click', (e) => {
+  if (e.target === burger) {
+    burger.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    burger.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+});
+
+const track = document.querySelector('.cards-track');
+
+track.addEventListener('mouseenter', () => {
+    track.style.animationPlayState = 'paused';
+});
+
+track.addEventListener('mouseleave', () => {
+    track.style.animationPlayState = 'running';
+});
