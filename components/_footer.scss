@@ -1,0 +1,26 @@
+.footer {
+    border-top: 1px solid #0000001F;
+    padding: 24px 0;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &_img {
+        width: 223px;
+        height: auto;
+    }
+
+    &_text {
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 167%;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: middle;
+
+    }
+}

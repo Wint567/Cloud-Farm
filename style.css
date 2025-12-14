@@ -315,7 +315,8 @@
 }
 .audience_box--content {
   position: relative;
-  width: 420px;
+  width: 100%;
+  max-width: 420px;
   height: 450px;
   overflow: hidden;
 }
@@ -351,6 +352,9 @@
   height: 92px;
   pointer-events: none;
   background: linear-gradient(180deg, rgba(236, 247, 238, 0.13) 0%, #ecf7ee 100%);
+}
+.audience_box--btn {
+  display: none;
 }
 
 .promotion {
@@ -591,6 +595,35 @@
     transform: translateY(-50%);
   }
 }
+.footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.1215686275);
+  padding: 24px 0;
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_img {
+  width: 223px;
+  height: auto;
+}
+.footer_text {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 167%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+@media (max-width: 1170px) {
+  .footer {
+    padding: 24px 16px;
+  }
+}
 @media (max-width: 900px) {
   .cloudfarm {
     padding-top: 0;
@@ -628,6 +661,61 @@
   }
   .cloudfarm_content--container--img {
     width: 150px;
+  }
+  .audience {
+    padding-top: 32px;
+  }
+  .audience_box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .audience_box--container--title {
+    font-size: 32px;
+    line-height: 120%;
+    margin-bottom: 16px;
+  }
+  .audience_box--container--text {
+    font-size: 18px;
+    line-height: 160%;
+    margin-bottom: 16px;
+  }
+  .audience_box--container--btn {
+    display: none;
+  }
+  .audience_box--content {
+    height: 100%;
+    overflow: auto;
+    margin-top: 8px;
+  }
+  .audience_box--content--cards {
+    animation: none;
+  }
+  .audience_box--content--cards--card {
+    gap: 12px;
+  }
+  .audience_box--content--cards--card--text {
+    font-size: 16px;
+  }
+  .audience_box--content .fade-bottom {
+    display: none;
+  }
+  .audience_box--btn {
+    display: block;
+    border-radius: 50px;
+    border: none;
+    padding: 16px 32px;
+    background-color: #01522D;
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 32px;
+    margin-top: 24px;
   }
   .info {
     flex-wrap: wrap;
@@ -732,5 +820,14 @@
   .info_box--text {
     text-align: center;
     font-size: 18px;
+  }
+  .footer {
+    padding: 20px 12px 49px;
+  }
+  .footer_img {
+    width: 188px;
+  }
+  .footer_text {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=style.css.map */

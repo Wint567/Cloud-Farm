@@ -1,3 +1,9 @@
+@media (max-width: 1170px) {
+    .footer {
+        padding: 24px 16px;
+    }
+}
+
 @media (max-width: 900px) {
     .cloudfarm {
         padding-top: 0;
@@ -45,6 +51,74 @@
                 &--img {
                     width: 150px;
                 }
+            }
+        }
+    }
+
+    .audience {
+        padding-top: 32px;
+
+        &_box {
+            flex-direction: column;
+            align-items: center;
+
+            &--container {
+                &--title {
+                    font-size: 32px;
+                    line-height: 120%;
+                    margin-bottom: 16px;
+                }
+
+                &--text {
+                    font-size: 18px;
+                    line-height: 160%;
+                    margin-bottom: 16px;
+                }
+
+                &--btn {
+                    display: none;
+                }
+            }
+
+            &--content {
+                height: 100%;
+                overflow: auto;
+                margin-top: 8px;
+
+                &--cards {
+                    animation: none;
+
+                    &--card {
+                        gap: 12px;
+
+                        &--text {
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+                .fade-bottom {
+                    display: none;
+                }
+            }
+
+            &--btn {
+                display: block;
+                border-radius: 50px;
+                border: none;
+                padding: 16px 32px;
+                background-color: #01522D;
+                font-family: Roboto;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: 0%;
+                text-align: center;
+                color: #fff;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                margin-bottom: 32px;
+                margin-top: 24px;
             }
         }
     }
@@ -175,6 +249,18 @@
                 text-align: center;
                 font-size: 18px;
             }
+        }
+    }
+
+    .footer {
+        padding: 20px 12px 49px;
+
+        &_img {
+            width: 188px;
+        }
+
+        &_text {
+            font-size: 14px;
         }
     }
 }

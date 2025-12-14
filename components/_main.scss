@@ -85,7 +85,8 @@
 
         &--content {
             position: relative;
-            width: 420px;
+            width: 100%;
+            max-width: 420px;
             height: 450px;
             overflow: hidden;
 
@@ -128,6 +129,11 @@
                         rgba(236, 247, 238, 0.13) 0%,
                         #ecf7ee 100%);
             }
+        }
+
+
+        &--btn {
+            display: none;
         }
     }
 }
